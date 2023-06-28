@@ -1,0 +1,252 @@
+:root {
+  --space-m:12px;
+  --space-xm:16px;
+  --space-l:24px;
+  --space-b:36px;
+  
+  --size-s:14px;
+  --size-m:16px;
+  --size-d:18px
+  --size-l:20px;
+
+  --color-border:#dee2e6;
+  --color-primary: rgb(38, 38, 229);
+  --color-title:#212529;
+  --color-text:#343a40; 
+
+  --border-radius: 12px;
+
+  --wieght-title: 600;
+  --wieght-text: 400;
+}
+/* ===================================== */
+.page {
+  background: #fff;
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.page_content {
+    max-width: 960px;
+    width: 100%;
+    gap: 80px;
+}
+/* ===================================== */
+
+.header {
+  padding: var(--space-l) 0;
+  border-bottom: 1px solid var(--color-border);
+  justify-content: space-between;
+ }
+
+ .logo {
+  font-size: 17px;
+  background:var(--color-primary);
+  color: #fff;
+  width: 24px;
+  height: 24px;
+  border-radius:calc(var(--border-radius)/2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav {
+    display: flex;
+} 
+.nav_inline {
+  gap: var(--space-l); 
+  justify-content: right;
+  font-weight: var(--wieght-title);
+}
+
+.nav_vertical {
+  gap: var(--space-m);
+  flex-direction: column; 
+
+}
+
+.nav_link {
+  color: var(--color-text);
+  font-size: var(--size-d);
+  text-decoration: none;
+  line-height: 100%;
+  
+}
+
+.nav_link:hover {
+    text-decoration: underline;
+    color: blue;
+  }
+
+
+.page-block:not(:last-child) {
+    margin-bottom: 80px;
+}
+
+.footer {
+    border-top: 1px solid #dee2e6;
+    margin-top: var(--space-m);
+    padding: var(--space-l) 0;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.footer_copyright {
+    font-size: var(--size-s);
+    color: var(--color-text);
+    margin-top: var(--space-l);
+    display: block;
+
+}
+
+.footer_title {
+    font-size: var(--size-l);
+    color: var(--color-title);
+    font-weight: var(--wieght-title);
+
+    margin-bottom: var(--space-m);
+    display: block;
+    
+}
+
+.main {
+  display: flex;
+  
+  gap: var(--space-b);
+  padding: var(--space-l) 0;
+  margin: 56px 0;
+}
+
+.main_image {
+  width: 500px;
+  height: 500px;
+  border-radius: var(--border-radius);
+}
+
+.main_content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-l);
+  justify-content: center;
+  
+}
+.main_title {
+  font-size: 36px; 
+  color: var(--color-title);
+  font-weight: var(--wieght-title);
+  line-height: 120%;
+}
+
+.main_description {
+  font-size: var(--size-m);
+  color: var(--color-text);
+  line-height: 170%;
+}
+.button_link {
+  align-self: flex-start;
+}
+
+.featured {
+  display: flex;
+  gap: var(--space-b);
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--color-border); 
+  
+
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-l);
+  
+}
+
+.card_image {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--border-radius);
+
+}
+
+.card_heading {
+  font-size: 32px;
+  color: var(--color-title);
+  font-weight: var(--wieght-title);
+  
+}
+
+.card_info {
+  font-size: var(--size-m);
+  font-weight: var(--wieght-text);
+  color: var(--color-text);
+  line-height: 150%;
+}
+
+.button {
+  display: flex;
+  padding: var(--space-m) var(--space-xm);
+  font-size: var(--size-d);
+
+  text-decoration: none;
+  color: #fff;
+  background: var(--color-primary);
+  border-radius:var(--border-radius)
+}
+
+.main_button {
+  display: inline-block;
+  padding: var(--space-m) var(--space-xm);
+  font-size: var(--size-d);
+
+  text-decoration: none;
+  color: #fff;
+  background: var(--color-primary);
+  border-radius:var(--border-radius);  
+}
+
+.card_button:hover {
+  opacity: 0.7; 
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;  
+  align-items: center; 
+  background: var(--color-primary);
+  padding: var(--space-l);
+  border-radius: var(--border-radius);
+  margin: 56px 0;
+}
+
+.form_action {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-m);
+ 
+}
+
+.form_heading {
+  font-size: var(--size-l);
+  font-weight: var(--wieght-text);
+  color: #fff;
+  line-height: 16px;
+}
+
+
+.form_button {
+  background: white;
+  color: var(--color-text); 
+ 
+  border-radius: 4px;
+
+  display: flex;
+padding: 16px 109px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+align-self: stretch;
+}
