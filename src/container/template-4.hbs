@@ -1,0 +1,84 @@
+
+    
+
+        <header> 
+            <div class="header row g-0">
+                <div class="col-2">
+                    {{> logo}}
+                </div>
+
+                <nav class="col-9 header_nav">
+                    <div class="header_nav_rigth">
+                        {{> nav list=header }}
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+               {{#with main}}
+            <div class="main">
+                <img src="{{image}}" alt="Main image" class="main_image">
+                <div class="main_content">
+                    <h1 class="main_title">
+                        {{heading}}
+                    </h1>
+                    <p class="main.description">{{description}}</p>
+                    <div class="button_link">
+                        <a href="{{href}}" class="button main_button">{{button}}</a>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            {{/with}}
+        </main>
+     
+        
+        <div class="featured">
+        {{#each featured}}
+            <div class="card">
+                <div class="card_image" style="background: url({{photo}});"></div>
+            
+                <h2 class="card_heading">
+                    {{heading}}
+                </h2>
+
+                <p class="card_info">
+                    {{info}} 
+                </p>
+                <div class="buttom-primary">
+                    <a href="{{linkUrl}}">{{linkText}}</a>
+                </div>
+            </div>
+        {{/each}}
+        </div>
+
+        <div class="form">
+            {{#each actions}}
+            <div class="form_action">
+               <h3 class="form_heading">{{heading}}</h3>
+                     
+                  <a href="{{url}}" class="button form_button">{{text}}</a>
+            </div>
+            {{/each}}
+                    
+        </div>
+       
+       <footer>
+            <div class=" footer">
+                <div class="col-3">
+                    {{> logo}}
+                    <span class="footer_copyright">Copyright 2023-2024</span>
+
+                </div>
+                {{#each footer}}
+                <div class="col-3 ">
+                    <span class="footer_title">{{title}}</span>
+                    {{> nav list=links isVertical=true}}
+                </div>
+                {{/each}}
+            </div>
+        </footer>
+
+
+
