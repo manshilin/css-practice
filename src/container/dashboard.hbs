@@ -23,35 +23,195 @@
 
 <body>
 	<div class="page page--dashboard">
-		<aside class="page_aside aside">
-			<div class="aside_logo">
+		<aside class="page_aside aside vrtical vertical--big">
+			<div class="text aside_logo">
 				Sidebar
 			</div>
-			<nav class="aside_nav">
-				<a href="#" class="nav-button nav-button--active hover">
+			<div class="vertical vertical-small">
+				<a href="#" class="nav-button nav-button--active icon--color-blue click">
 					<span class="icon nav-button__icon" style="background-image: url('/svg/nav/home.svg')"></span>
-					<span class="text text--line text--light">Home</span>
+					<span class="text text--light">Home</span>
 				</a>
-				<a href="#" class="nav-button nav-button--active hover">
+				<a href="#" class="nav-button click">
 					<span class="icon nav-button__icon" style="background-image: url('/svg/nav/table.svg')"></span>
-					<span class="text text--line text--light">Orders</span>
+					<span class="text text--light">Orders</span>
 				</a>
-				<a href="#" class="nav-button nav-button--active hover">
+				<a href="#" class="nav-button click">
 					<span class="icon nav-button__icon" style="background-image: url('/svg/nav/grid.svg')"></span>
-					<span class="text text--line text--light">Products</span>
+					<span class="text text--light">Products</span>
 				</a>
-			</nav>
+
+			</div>
+
 		</aside>
-		<header class="header">
-				TEST
+		<header class="header relative">
+			<div class="layout header_content text--small ">
+				<div class="header__search relative">
+					<input type="text" class="text field bolder field--header" placeholder="Seach">
+					<span class="icon header__icon-search"
+						style="background-image: url('/svg/header/search.svg')"></span>
+					<span class="icon icon--header-settings icon--button icon--color-blue click "
+						style="background-image: url('/svg/header/settings.svg')"></span>
+				</div>
+				<div class="header_icons_right">
+					<span class="icon icon--header-antenna icon--button icon--color-yellow-ligth click"
+						style="background-image: url('/svg/header/antenna.svg')"></span>
+					<span class="icon icon--header-symbols icon--button icon--color-blue-light click"
+						style="background-image: url('/svg/header/symbols.svg')"></span>
+					<span class="icon icon--header-bell icon--button icon--color-yellow-ligth click"
+						style="background-image: url('/svg/header/bell.svg')"> </span>
+				</div>
+
+			</div>
 		</header>
 		<main class="main">
-				13215465465
+
+			<div class="layout">
+				<section class="box analitic__block">
+					<div class="analitic analitic--double analitic--purple-light">
+						<span class="icon analitic__button icon--button icon--color-blue"
+							style="background-image: url('/svg/analitic/money.svg')"></span>
+						<div class="relative vertical vertical--small">
+							<div class="analitic__title text text--heading text--light">$500.00</div>
+							<span class="icon analitic__arrow"
+								style="background-image: url('/svg/analitic/blue-arrow.svg')"></span>
+							<div class="analitic__info text text--small text--light text--lighter">Total earning</div>
+						</div>
+					</div>
+					<div class="analitic analitic--double analitic--blue-light">
+						<span class="icon analitic__button icon--button icon--color-blue"
+							style="background-image: url('/svg/analitic/bag.svg')"></span>
+						<div class="relative vertical vertical--small">
+							<div class="analitic__title text text--heading text--light">$961</div>
+							<div class="analitic__info text text--small text--light text--lighter">Total Order</div>
+						</div>
+					</div>
+					<div class="analitic analitic--simple analitic--blue-light">
+						<span class="icon analitic__button icon--button icon--color-blue"
+							style="background-image: url('/svg/analitic/money.svg')"></span>
+						<div class="relative vertical vertical--very-small">
+							<div class="analitic__title text text--small2 text--light">$203k</div>
+							<div class="analitic__info text text--small1 text--light text--lighter">Total Income</div>
+						</div>
+					</div>
+
+					<div class="analitic analitic--simple border">
+						<span class="icon analitic__button icon--button icon--color-yellow-ligth"
+							style="background-image: url('/svg/analitic/shop.svg')"></span>
+						<div class="relative vertical vertical--very-small">
+							<div class="analitic__title text text--small2">$203k</div>
+
+							<div class="analitic__info text text--small1">Total Income</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="main_down">
+					<div class="main_down_left border">
+						<div class="mdl_title text text--heading divider">
+							Purchase list
+						</div>
+						<div class="mdl_content">
+							<div class="mdl_content--grid divider">
+								<div class="text text--small">ID437661</div>
+								<div class="text text--small">AirOn ProCam</div>
+								<div class="text text--small">132.32 EUR</div>
+								<div class="text text--small">Customer</div>
+								<div class="text text--small">May 11, 2023, 14:21</div>
+								<div class="text text--small">7/8 USB Type-C</div>
+								<div class="text text--small text--warning">Not paid</div>
+								<div class="text text--small">robin@com.de</div>
+							</div>
+							
+							<div class="mdl_content--grid">
+							<div class="text text--small">ID437661</div>
+							<div class="text text--small">PHILIPS Essential</div>
+							<div class="text text--small text--success">543 USD</div>
+							<div class="text text--small">Customer</div>
+							<div class="text text--small">May 11, 2023, 14:21</div>
+							<div class="text text--small">HD9200/90</div>
+							<div class="text text--small">Pay by Stripe</div>
+							<div class="text text--small">dima@com.ua</div>
+							</div>
+						</div>
+
+
+
+
+					</div>
+					<div class="main_down-right border">
+						<div class="mdr__title divider text text--heading">Payment</div>
+						<div class="mdr_checkbox relativ">
+							<div class="mdr_checkbox__item">
+								<input type="checkbox" name="" id="" class="mdr_checkbox__input">
+								<label for="" class="mdr_checkbox__label text text--small">Credit card</label>
+							</div>
+							<div class="mdr_checkbox__item">
+								<input type="checkbox" name="" id="" class="mdr_checkbox__input">
+								<label for="" class="mdr_checkbox__label text text--small">Debit card</label>
+							</div>
+							<div class="mdr_checkbox__item">
+								<input type="checkbox" name="" id="" class="mdr_checkbox__input">
+								<label for="" class="mdr_checkbox__label text text--small">PayPal</label>
+							</div>
+						</div>
+						<div class="mdr_card__info divider">
+							<div class="card-info__item">
+								<div class="card-info__title text text--small">Name on card</div>
+								<div class="card-info__input">
+									<input type="text" class="text  border">
+								</div>
+							</div>
+							<div class="card-info__item">
+								<div class="card-info__title text text--small">Credit card number</div>
+								<div class="card-info__input">
+									<input type="text" class="text  border">
+								</div>
+							</div>
+							<div class="card-info__item">
+								<div class="card-info__title text text--small">Expiration</div>
+								<div class="card-info__input">
+									<input type="text" class="text  border">
+								</div>
+							</div>
+							<div class="card-info__item">
+								<div class="card-info__title text text--small">CVV</div>
+								<div class="card-info__input">
+									<input type="text" class="text border">
+								</div>
+							</div>
+						</div>
+
+						<div class="mdr_choose divider">
+
+							<div class="field field--select border relative">
+								<span class="text"> Choose...</span>
+								<select name="" id="" class="field__select ">
+									<option value="cat">Cat</option>
+									<option value="dog">Dog</option>
+								</select>
+
+							</div>
+
+							<div class="field field--select border relative">
+								<span class="text"> Choose...</span>
+								<select name="" id="" class="field__select border">
+									<option value="cat">Cat</option>
+									<option value="dog">Dog</option>
+								</select>
+							</div>
+
+						</div>
+						<div class="card_button">
+							<a href="#" class="nav-button text text--light analitic--blue-light">Continue to checkout</a>
+						</div>
+						
+					</div>
+
+				</section>
+			</div>
 		</main>
 	</div>
-
-	
 </body>
-
 
 </html>
